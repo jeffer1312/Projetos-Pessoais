@@ -1,0 +1,377 @@
+/*reset da pagina*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/*para mobile*/
+
+input,
+textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus,
+input[type=email],
+input[type=submit] {
+    outline: 0;
+}
+
+
+/*iframe{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+border: 0;
+}*/
+
+
+/*fim para mobile*/
+
+
+/*propriedades fixas*/
+
+
+/*imagens geral*/
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*imagens geral*/
+
+.container {
+    max-width: 1440px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+section.conteudo {
+    min-height: 900px;
+}
+
+.logo {
+    float: left
+}
+
+.centralizar {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+/*propriedades de alinhamento*/
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.text-white {
+    color: white;
+}
+
+.ligth-blue {
+    background-color: #00a3d9;
+}
+
+
+/*propriedades do flex box*/
+
+.flex {
+    display: flex;
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+/*tamanhos de colunas*/
+
+.ws12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.w1 {
+    width: 8.33%;
+}
+
+.w2 {
+    width: 16.66%;
+}
+
+.w3 {
+    width: 24.99%;
+}
+
+.w4 {
+    width: 33.32%;
+}
+
+.w5 {
+    width: 41.65%;
+}
+
+.w6 {
+    width: 49.98%;
+}
+
+.w7 {
+    width: 58.31%;
+}
+
+.w8 {
+    width: 66.64%;
+}
+
+.w9 {
+    width: 74.97%;
+}
+
+.w10 {
+    width: 83.30%;
+}
+
+.w11 {
+    width: 91.63%;
+}
+
+.w12 {
+    width: 100%;
+}
+
+.w33 {
+    width: 33.3%
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+
+/*fim de tamanhos de colunas*/
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.order5 {
+    order: 5;
+}
+
+.order6 {
+    order: 6;
+}
+
+.order7 {
+    order: 7;
+}
+
+.order8 {
+    order: 8;
+}
+
+.order9 {
+    order: 9;
+}
+
+.order10 {
+    order: 10;
+}
+
+.order11 {
+    order: 11;
+}
+
+.order12 {
+    order: 12;
+}
+
+
+/*fim do flex box*/
+
+
+/*menu desktop*/
+
+.menu-desktop {
+    float: right;
+}
+
+nav.menu-desktop>ul>li:hover>ul.submenu-desktop {
+    display: block;
+}
+
+.menu-desktop ul {
+    position: relative;
+    top: 4px;
+    list-style-type: none;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-desktop a:hover {
+    text-decoration: underline;
+}
+
+.menu-desktop>ul>li {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+ul.submenu-desktop {
+    list-style-type: none;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    width: 300px;
+    padding: 8px 0;
+    background: transparent;
+}
+
+ul.submenu-desktop li {
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+}
+
+ul.submenu-desktop a {
+    color: black;
+}
+
+
+/*fim menu desktop*/
+
+
+/*menu Mobile*/
+
+.menu-mobile {
+    display: none;
+    float: right;
+}
+
+.menu-mobile i {
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+}
+
+.menu-mobile ul {
+    width: 100%;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    padding: 30px;
+    list-style-type: none;
+    background-color: #1256d2;
+    text-align: center;
+}
+
+.menu-mobile li {
+    margin-top: 25px;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Fim menu mobile*/
+
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 140px;
+    background: blue;
+}
+
+
+/*Fim propriedades fixas*/
+
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none
+    }
+    .menu-mobile {
+        display: block;
+    }
+    div.w50,
+    div.w33 {
+        width: 100%;
+    }
+    .left,
+    .right,
+    .center {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+
+/**/
+
+header {
+    padding: 10px 2%;
+    background: #1976d2;
+}
